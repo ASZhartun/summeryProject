@@ -5,9 +5,6 @@ import org.springframework.stereotype.Component;
 
 import java.util.Objects;
 
-/**
- * Citizen that can use service of householder utilities.
- */
 @Component
 public class ApartmentHolder {
     private int id;

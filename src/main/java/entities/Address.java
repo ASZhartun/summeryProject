@@ -6,9 +6,6 @@ import java.sql.Date;
 import java.util.Objects;
 
 @Component
-/**
- * Address where holder is living nowadays.
- */
 public class Address {
     private String city;
     private int house;

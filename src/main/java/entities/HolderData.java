@@ -6,9 +6,6 @@ import org.springframework.stereotype.Component;
 import java.sql.Date;
 import java.util.Objects;
 
-/**
- * Actually that class is copy of passport data.
- */
 @Component
 public class HolderData {
     private String id;
