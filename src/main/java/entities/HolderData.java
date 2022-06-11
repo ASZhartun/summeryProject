@@ -1,11 +1,15 @@
 package entities;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import java.sql.Date;
 import java.util.Objects;
 
 /**
  * Actually that class is copy of passport data.
  */
+@Component
 public class HolderData {
     private String id;
     private String docNumber;
@@ -17,7 +21,7 @@ public class HolderData {
     public HolderData() {
 
     }
-
+    @Autowired
     public HolderData(String id, String docNumber, String name, String surname, Date birth, Address address) {
         this.id = id;
         this.docNumber = docNumber;

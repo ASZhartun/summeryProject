@@ -1,8 +1,11 @@
 package entities;
 
+import org.springframework.stereotype.Component;
+
 import java.sql.Date;
 import java.util.Objects;
 
+@Component
 /**
  * Address where holder is living nowadays.
  */

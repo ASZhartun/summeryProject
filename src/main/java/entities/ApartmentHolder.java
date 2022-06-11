@@ -1,14 +1,19 @@
 package entities;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import java.util.Objects;
 
 /**
  * Citizen that can use service of householder utilities.
  */
+@Component
 public class ApartmentHolder {
     private int id;
     private HolderData holderData;
 
+    @Autowired
     public ApartmentHolder(int id, HolderData holderData) {
         this.id = id;
         this.holderData = holderData;
@@ -45,5 +50,10 @@ public class ApartmentHolder {
     @Override
     public int hashCode() {
         return Objects.hash(id);
+    }
+
+    @Override
+    public String toString() {
+        return "citizen is here!";
     }
 }
